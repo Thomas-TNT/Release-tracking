@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Release Notes - Executive Summary</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica', 'Arial', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f5f5f5;
+        }
+
+        header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 2rem 0;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .subtitle {
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+
+        main {
+            padding: 2rem 0;
+        }
+
+        .release {
+            background: white;
+            border-radius: 8px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .release:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+        }
+
+        .release-header {
+            border-bottom: 2px solid #667eea;
+            padding-bottom: 1rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .release-version {
+            font-size: 1.8rem;
+            color: #667eea;
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+        }
+
+        .release-date {
+            color: #666;
+            font-size: 0.95rem;
+        }
+
+        .release-type {
+            display: inline-block;
+            padding: 0.25rem 0.75rem;
+            border-radius: 4px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            margin-left: 1rem;
+        }
+
+        .release-type.major {
+            background-color: #f56565;
+            color: white;
+        }
+
+        .release-type.minor {
+            background-color: #4299e1;
+            color: white;
+        }
+
+        .release-type.patch {
+            background-color: #48bb78;
+            color: white;
+        }
+
+        .release-content h3 {
+            color: #2d3748;
+            margin-top: 1.5rem;
+            margin-bottom: 0.75rem;
+            font-size: 1.2rem;
+        }
+
+        .release-content ul {
+            list-style-position: inside;
+            margin-left: 1rem;
+        }
+
+        .release-content li {
+            margin-bottom: 0.5rem;
+            padding-left: 0.5rem;
+        }
+
+        .release-content p {
+            margin-bottom: 1rem;
+        }
+
+        footer {
+            background-color: #2d3748;
+            color: white;
+            text-align: center;
+            padding: 1.5rem 0;
+            margin-top: 3rem;
+        }
+
+        .no-releases {
+            text-align: center;
+            padding: 3rem 2rem;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+
+        .no-releases h2 {
+            color: #666;
+            margin-bottom: 1rem;
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+
+            .release {
+                padding: 1.5rem;
+            }
+
+            .release-version {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Release Notes</h1>
+            <p class="subtitle">Executive Summary - Track all releases and updates</p>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <!-- Example Release 1 -->
+            <article class="release">
+                <div class="release-header">
+                    <h2 class="release-version">
+                        Version 2.0.0
+                        <span class="release-type major">MAJOR</span>
+                    </h2>
+                    <p class="release-date">Released on October 31, 2025</p>
+                </div>
+                <div class="release-content">
+                    <h3>🚀 New Features</h3>
+                    <ul>
+                        <li>Complete redesign of the user interface with modern styling</li>
+                        <li>Added dark mode support for better accessibility</li>
+                        <li>Introduced real-time collaboration features</li>
+                        <li>New analytics dashboard for tracking user engagement</li>
+                    </ul>
+
+                    <h3>💡 Improvements</h3>
+                    <ul>
+                        <li>Performance optimizations - 50% faster load times</li>
+                        <li>Enhanced mobile responsiveness across all devices</li>
+                        <li>Improved search functionality with advanced filters</li>
+                    </ul>
+
+                    <h3>🐛 Bug Fixes</h3>
+                    <ul>
+                        <li>Fixed issue with data not syncing properly</li>
+                        <li>Resolved navigation menu glitches on mobile devices</li>
+                        <li>Corrected timezone display issues in reports</li>
+                    </ul>
+
+                    <h3>⚠️ Breaking Changes</h3>
+                    <ul>
+                        <li>API endpoints have been updated to v2 - please update your integrations</li>
+                        <li>Deprecated legacy authentication method - migrate to OAuth 2.0</li>
+                    </ul>
+                </div>
+            </article>
+
+            <!-- Example Release 2 -->
+            <article class="release">
+                <div class="release-header">
+                    <h2 class="release-version">
+                        Version 1.5.2
+                        <span class="release-type patch">PATCH</span>
+                    </h2>
+                    <p class="release-date">Released on October 15, 2025</p>
+                </div>
+                <div class="release-content">
+                    <h3>🐛 Bug Fixes</h3>
+                    <ul>
+                        <li>Fixed critical security vulnerability in authentication</li>
+                        <li>Resolved memory leak affecting long-running sessions</li>
+                        <li>Corrected calculation errors in financial reports</li>
+                    </ul>
+
+                    <h3>💡 Improvements</h3>
+                    <ul>
+                        <li>Updated dependencies to latest stable versions</li>
+                        <li>Minor UI refinements for better clarity</li>
+                    </ul>
+                </div>
+            </article>
+
+            <!-- Example Release 3 -->
+            <article class="release">
+                <div class="release-header">
+                    <h2 class="release-version">
+                        Version 1.5.0
+                        <span class="release-type minor">MINOR</span>
+                    </h2>
+                    <p class="release-date">Released on September 28, 2025</p>
+                </div>
+                <div class="release-content">
+                    <h3>🚀 New Features</h3>
+                    <ul>
+                        <li>Added export functionality for all data formats (CSV, JSON, PDF)</li>
+                        <li>Introduced keyboard shortcuts for power users</li>
+                        <li>New notification system for important updates</li>
+                    </ul>
+
+                    <h3>💡 Improvements</h3>
+                    <ul>
+                        <li>Enhanced error messages with actionable suggestions</li>
+                        <li>Streamlined onboarding process for new users</li>
+                        <li>Better handling of large datasets</li>
+                    </ul>
+
+                    <h3>🐛 Bug Fixes</h3>
+                    <ul>
+                        <li>Fixed pagination issues in list views</li>
+                        <li>Resolved conflicts with browser extensions</li>
+                    </ul>
+                </div>
+            </article>
+
+            <!-- Instructions for adding new releases -->
+            <article class="release" style="border-left: 4px solid #667eea;">
+                <div class="release-header">
+                    <h2 class="release-version" style="color: #2d3748;">
+                        📝 How to Add New Releases
+                    </h2>
+                </div>
+                <div class="release-content">
+                    <p><strong>To add a new release, edit the index.html file and add a new article block:</strong></p>
+                    <ol style="list-style-position: inside; margin-left: 1rem;">
+                        <li style="margin-bottom: 0.5rem;">Copy one of the existing release article blocks</li>
+                        <li style="margin-bottom: 0.5rem;">Update the version number and release date</li>
+                        <li style="margin-bottom: 0.5rem;">Change the release type badge (major, minor, or patch)</li>
+                        <li style="margin-bottom: 0.5rem;">Fill in your release notes content</li>
+                        <li style="margin-bottom: 0.5rem;">Commit and push your changes to GitHub</li>
+                        <li style="margin-bottom: 0.5rem;">GitHub Pages will automatically update within a few minutes</li>
+                    </ol>
+                    <p style="margin-top: 1rem;"><strong>Release Type Guidelines:</strong></p>
+                    <ul>
+                        <li><strong>MAJOR:</strong> Breaking changes or significant new features</li>
+                        <li><strong>MINOR:</strong> New features without breaking changes</li>
+                        <li><strong>PATCH:</strong> Bug fixes and minor improvements</li>
+                    </ul>
+                </div>
+            </article>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Release Tracking. View the source on <a href="https://github.com/Thomas-TNT/Release-tracking" style="color: #667eea; text-decoration: none;">GitHub</a></p>
+        </div>
+    </footer>
+</body>
+</html>
